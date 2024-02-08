@@ -1421,7 +1421,7 @@ setup_linux_env() {
   probe_cc $USE_TOOLCHAIN
   add_elf_flags
   enable_opt v4l2-request libudev
-  enable_opt vaapi vdpau libdrm
+  enable_opt vaapi vdpau
   $USE_VK && EXTRA_CFLAGS+=" -I\$THIS_DIR/tools/Vulkan-Headers/include"
   $IS_CLANG && enable_cuda_llvm
   $IS_CLANG && EXTRA_CFLAGS+=" -I=/usr/include/libdrm"
